@@ -5,7 +5,8 @@
   "source": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist",
+    "sass": "sass ./src/sass/main.scss ./css/main.css"
   },
   "author": "Hy",
   "license": "ISC",
@@ -13,5 +14,8 @@
     "@parcel/transformer-sass": "^2.6.2",
     "parcel": "^2.6.2",
     "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "fractional": "^1.0.0"
   }
 }
